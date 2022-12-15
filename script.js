@@ -2,8 +2,9 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 const hour = dayjs().hour();
-const timeRN = dayjs().format("dddd, MMMM YYYY"); //id current day in html
-$("#currentDay").text(timeRN)
+const DMY = dayjs().format("dddd, MMMM YYYY"); //id current day in html
+$("#currentDay").text(DMY)
+$(document).ready(function() {
 
 //anything involving time, contain in function
 function Time() {
@@ -21,48 +22,23 @@ $(".time-block").each(function () { //go through each row with loop!
     $(this).removeClass("future")
     $(this).addClass("present")
   }
-  else{//remove any previous classes, then add new class
-    $(this).removeClass("futre")
+  if(rowTime < hour){//remove any previous classes, then add new class
+    $(this).removeClass("future")
     $(this).removeClass("present")
     $(this).addClass("past")
   }
 })
 }
-
-$(".description").each(function(){
+//save each description
 $(".saveBtn").on("click", function(){
-
-  var input = $(this).siblings(".description").val();
-  localStorage.setItem("input", input);
-  localStorage.getItem("input", input);
-  console.log("test");
+localStorage.setItem("9", $(".description9").val());
 })
-})
-//html class called saveBtn
-// $(".saveBtn").on("click", function(){ //click event
-//   //the text description class is called description.
 
-  
-
-
-//   localStorage.setItem("description", input);
-// })
-
-
-
-
-// //target the whole document to store in local storage?
-// $(docuement).ready(function () {
-// if(localStorage.getItem)
-
-
-
-
-
+$(".description9").val(localStorage.getItem("9"));
 
 Time();
 
-
+})
 
 
 
