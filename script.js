@@ -1,6 +1,6 @@
 const hour = dayjs().hour(); //display the hour
 const DMY = dayjs().format("dddd, MMMM YYYY"); //Displays the day, the month, and the year
-$("#currentDay").text(DMY);
+$("#currentDay").text(DMY); //To view the updated current day text
 $(document).ready(function() {
 
 //anything involving time, contain in function
@@ -8,24 +8,24 @@ function Time() {
 //try to parse int - converting the string to a number and compare to hour
 $(".time-block").each(function () { //go through each row with loop!
   var rowTime = parseInt($(this).attr("id")); //applies to all rows target the ID
-  if(rowTime > hour){ //remove any previous classes, then add new class
-    $(this).removeClass("present"); //comments say use class past, present and future
+  if(rowTime > hour){ //remove any previous classes, then add new class 'future'
+    $(this).removeClass("present"); 
     $(this).removeClass("part");
     $(this).addClass("future");
   }
-  if(rowTime === hour){//remove any previous classes, then add new class
+  if(rowTime === hour){//remove any previous classes, then add new class 'present'
     $(this).removeClass("past");
     $(this).removeClass("future");
     $(this).addClass("present");
   }
-  if(rowTime < hour){//remove any previous classes, then add new class
+  if(rowTime < hour){//remove any previous classes, then add new class 'past'
     $(this).removeClass("future");
     $(this).removeClass("present");
     $(this).addClass("past");
   }
 })
 }
-//save each description
+//save each INDIVIDUAL description
   $(".saveBtn9").on("click", function(){ 
     localStorage.setItem("9", $(".description9").val());
     console.log("passing through button9");
@@ -54,7 +54,7 @@ $(".time-block").each(function () { //go through each row with loop!
   $(".saveBtn17").on("click", function(){ 
     localStorage.setItem("17", $(".description17").val());
 })
-
+//grabbing the users input into text areas
 $(".description9").val(localStorage.getItem("9"));
 $(".description10").val(localStorage.getItem("10"));
 $(".description11").val(localStorage.getItem("11"));
@@ -65,15 +65,7 @@ $(".description15").val(localStorage.getItem("15"));
 $(".description16").val(localStorage.getItem("16"));
 $(".description17").val(localStorage.getItem("17"));
 
-Time();
+Time(); //function to update time-blocks
 })
 
-
-
-
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
 
