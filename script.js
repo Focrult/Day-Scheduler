@@ -32,12 +32,27 @@ $(".time-block").each(function () { //go through each row with loop!
 //save each description
 $(".saveBtn").on("click", function(){
 localStorage.setItem("9", $(".description9").val());
+localStorage.setItem("10", $(".description10").val());
+localStorage.setItem("11", $(".description11").val());
+localStorage.setItem("12", $(".description12").val());
+localStorage.setItem("13", $(".description13").val());
+localStorage.setItem("14", $(".description14").val());
+localStorage.setItem("15", $(".description15").val());
+localStorage.setItem("16", $(".description16").val());
+localStorage.setItem("17", $(".description17").val());
 })
 
 $(".description9").val(localStorage.getItem("9"));
+$(".description10").val(localStorage.getItem("10"));
+$(".description11").val(localStorage.getItem("11"));
+$(".description12").val(localStorage.getItem("12"));
+$(".description13").val(localStorage.getItem("13"));
+$(".description14").val(localStorage.getItem("14"));
+$(".description15").val(localStorage.getItem("15"));
+$(".description16").val(localStorage.getItem("16"));
+$(".description17").val(localStorage.getItem("17"));
 
 Time();
-
 })
 
 
