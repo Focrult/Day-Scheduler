@@ -20,7 +20,7 @@ The usage for this project, is to enable any user to add important events, for a
 
 
 # Screeshots + Link
-Link to deployed application: https://focrult.github.io/Day-Scheduler/
+Link to deployed application: https://focrult.github.io/Work-Day-Scheduler/
 ![work1](https://user-images.githubusercontent.com/114898970/207802331-872314d8-3792-4895-b5ef-d25178af8025.png)
 ![work2](https://user-images.githubusercontent.com/114898970/207802344-97bd0f2e-418b-4109-a505-dddc8de1e1b1.png)
 
