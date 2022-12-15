@@ -4,7 +4,6 @@ $("#currentDay").text(DMY); //To view the updated current day text
 $(document).ready(function() {
 //anything relating to time, is contained in single function below
 function Time() {
-//try to parse int - converting the string to a number and compare to hour
 $(".time-block").each(function () { //go through each row with loop!
   var rowTime = parseInt($(this).attr("id")); //applies to all rows target the ID
   if(rowTime > hour){ //remove any previous classes, then add new class 'future'
