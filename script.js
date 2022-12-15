@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-
+const hour = dayjs().hour();
 const timeRN = dayjs().format('dddd, MMMM YYYY'); //id current day in html
 $('#currentDay').text(timeRN)
 
@@ -17,13 +17,8 @@ $('#currentDay').text(timeRN)
 //get hour of the day contain in a functioN???
 
 function Time() {
-const hour = timeRN.hour();
 console.log(hour)
 //try to parse int - converting the string to a number and compare to hour
-
-
-
-
 $(".time-block").each(function () { //go through each row with loop!
   var rowTime = parseInt($(this).attr("id")) //applies to all rows target the ID
   if(rowTime > timeRN){ //remove any previous classes, then add new class
@@ -53,7 +48,7 @@ $(".time-block").each(function () { //go through each row with loop!
 
 
 
-
+Time();
 
 
 
