@@ -1,4 +1,4 @@
-## Work-Day Scheduler
+## Day Scheduler
 # Challenge #5 - Week 5:
 
 
