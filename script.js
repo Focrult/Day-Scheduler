@@ -2,20 +2,10 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 const hour = dayjs().hour();
-const timeRN = dayjs().format('dddd, MMMM YYYY'); //id current day in html
-$('#currentDay').text(timeRN)
+const timeRN = dayjs().format("dddd, MMMM YYYY"); //id current day in html
+$("#currentDay").text(timeRN)
 
-
-
-
-// $(savebtn).on("click", function (event) { 
-// //   //target save button click listener
-  
-// })
-  //event listener
-
-//get hour of the day contain in a functioN???
-
+//anything involving time, contain in function
 function Time() {
 console.log(hour)
 //try to parse int - converting the string to a number and compare to hour
@@ -37,8 +27,30 @@ $(".time-block").each(function () { //go through each row with loop!
     $(this).addClass("past")
   }
 })
-
 }
+
+$(".description").each(function(){
+$(".saveBtn").on("click", function(){
+
+  var input = $(this).siblings(".description").val();
+  localStorage.setItem("input", input);
+  localStorage.getItem("input", input);
+  console.log("test");
+})
+})
+//html class called saveBtn
+// $(".saveBtn").on("click", function(){ //click event
+//   //the text description class is called description.
+
+  
+
+
+//   localStorage.setItem("description", input);
+// })
+
+
+
+
 // //target the whole document to store in local storage?
 // $(docuement).ready(function () {
 // if(localStorage.getItem)
@@ -53,24 +65,6 @@ Time();
 
 
 
-
-
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  
-
-
-
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
 
 
   // TODO: Add code to get any user input that was saved in localStorage and set
