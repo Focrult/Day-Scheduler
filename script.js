@@ -18,13 +18,30 @@ $(savebtn).on("click", function (event) { //target save button click
   
   ) //event listener
 
-use if statements?
+$(".timeRN").each(function () { //go through each row
+  var rowTime = $(this).attr("id")...TimeRN.
+  if(rowTime > timeRN){ //remove any previous classes, then add new class
+    $(this).removeClass("")
+    $(this).removeClass("")
+    $(this).addClass("")
+  }
+  if(rowTime === timeRN){//remove any previous classes, then add new class
+    $(this).removeClass("")
+    $(this).removeClass("")
+    $(this).addClass("")
+  }
+  else{//remove any previous classes, then add new class
+    $(this).removeClass("")
+    $(this).removeClass("")
+    $(this).addClass("")
+  }
+  
+  )}
 
 
-//target the whole document
-
+//target the whole document to store in local storage?
 $(docuement).ready(function () {
-
+if(localStorage.getItem)
 
 
 
