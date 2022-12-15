@@ -2,8 +2,7 @@ const hour = dayjs().hour(); //display the hour
 const DMY = dayjs().format("dddd, MMMM YYYY"); //Displays the day, the month, and the year
 $("#currentDay").text(DMY); //To view the updated current day text
 $(document).ready(function() {
-
-//anything involving time, contain in function
+//anything relating to time, is contained in single function below
 function Time() {
 //try to parse int - converting the string to a number and compare to hour
 $(".time-block").each(function () { //go through each row with loop!
@@ -54,7 +53,7 @@ $(".time-block").each(function () { //go through each row with loop!
   $(".saveBtn17").on("click", function(){ 
     localStorage.setItem("17", $(".description17").val());
 })
-//grabbing the users input into text areas
+//grabbing the users saved input typed into text areas
 $(".description9").val(localStorage.getItem("9"));
 $(".description10").val(localStorage.getItem("10"));
 $(".description11").val(localStorage.getItem("11"));
