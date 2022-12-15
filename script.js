@@ -1,47 +1,42 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-  //Aedans notes: use last weeks notes! the answer is there!
-//event listener for click event save button - saves in local storage
 
-const TimeRN
-$(select text).text(TimeRN)
-
-save button when clicked, for each hour?
+const timeRN = dayjs().format('dddd, MMMM YYYY'); //id current day in html
+$('#currentDay').text(timeRN)
 
 
-// match time RN with if stattements to cycle through green, grey, red?
 
 
-$(savebtn).on("click", function (event) { //target save button click
+// $(savebtn).on("click", function (event) { //target save button click listener
   
+// }
+// //   ) //event listener
+
+// $(".timeRN").each(function () { //go through each row
+//   var rowTime = $(this).attr("id")
+//   if(rowTime > timeRN){ //remove any previous classes, then add new class
+//     $(this).removeClass("present") //comments say use class past, present and future
+//     $(this).removeClass("part")
+//     $(this).addClass("future")
+//   }
+//   if(rowTime === timeRN){//remove any previous classes, then add new class
+//     $(this).removeClass("past")
+//     $(this).removeClass("future")
+//     $(this).addClass("present")
+//   }
+//   else{//remove any previous classes, then add new class
+//     $(this).removeClass("futre")
+//     $(this).removeClass("present")
+//     $(this).addClass("past")
+//   }
   
-  ) //event listener
-
-$(".timeRN").each(function () { //go through each row
-  var rowTime = $(this).attr("id")...TimeRN.
-  if(rowTime > timeRN){ //remove any previous classes, then add new class
-    $(this).removeClass("")
-    $(this).removeClass("")
-    $(this).addClass("")
-  }
-  if(rowTime === timeRN){//remove any previous classes, then add new class
-    $(this).removeClass("")
-    $(this).removeClass("")
-    $(this).addClass("")
-  }
-  else{//remove any previous classes, then add new class
-    $(this).removeClass("")
-    $(this).removeClass("")
-    $(this).addClass("")
-  }
-  
-  )}
+// })
 
 
-//target the whole document to store in local storage?
-$(docuement).ready(function () {
-if(localStorage.getItem)
+// //target the whole document to store in local storage?
+// $(docuement).ready(function () {
+// if(localStorage.getItem)
 
 
 
@@ -71,24 +66,6 @@ if(localStorage.getItem)
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   //
-
-
-  // if day > x{
-  //   green background <- changes html box to future
-  //$().removeClass("past").addClass("future");
-
-
-  // }
-  // if day === x {
-  //   background will equal red changes html box to PRESENT
-  // $().removeClass("futre").addClass("present");
-  // }
-  // else{
-  //   backghround will be greyed out changes html box to PAST
-  //$().removeClass("present").addClass("past");
-  // }
-
-
 
 
   // TODO: Add code to get any user input that was saved in localStorage and set
