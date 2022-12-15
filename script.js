@@ -21,12 +21,12 @@ console.log(hour)
 //try to parse int - converting the string to a number and compare to hour
 $(".time-block").each(function () { //go through each row with loop!
   var rowTime = parseInt($(this).attr("id")) //applies to all rows target the ID
-  if(rowTime > timeRN){ //remove any previous classes, then add new class
+  if(rowTime > hour){ //remove any previous classes, then add new class
     $(this).removeClass("present") //comments say use class past, present and future
     $(this).removeClass("part")
     $(this).addClass("future")
   }
-  if(rowTime === timeRN){//remove any previous classes, then add new class
+  if(rowTime === hour){//remove any previous classes, then add new class
     $(this).removeClass("past")
     $(this).removeClass("future")
     $(this).addClass("present")
