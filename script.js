@@ -3,18 +3,37 @@
 // in the html.
   //Aedans notes: use last weeks notes! the answer is there!
 //event listener for click event save button - saves in local storage
-$(document).ready(function () {
-  $("button").click(function () {
-  
-    console.log("button clicked")
-    //saves data into local storage
-})}
-)
-  
 
-// $('.CLASSNAME').on('click', function(){ <-event listner
-//   var saveBtn = $(this).attr('ID');
-// })
+const TimeRN
+$(select text).text(TimeRN)
+
+save button when clicked, for each hour?
+
+
+// match time RN with if stattements to cycle through green, grey, red?
+
+
+$(savebtn).on("click", function (event) { //target save button click
+  
+  
+  ) //event listener
+
+use if statements?
+
+
+//target the whole document
+
+$(docuement).ready(function () {
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -25,7 +44,10 @@ $(document).ready(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  //
+  
+
+
+
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -35,14 +57,23 @@ $(document).ready(function () {
 
 
   // if day > x{
-  //   green background
+  //   green background <- changes html box to future
+  //$().removeClass("past").addClass("future");
+
+
   // }
   // if day === x {
-  //   background will equal red
+  //   background will equal red changes html box to PRESENT
+  // $().removeClass("futre").addClass("present");
   // }
   // else{
-  //   backghround will be greyed out
+  //   backghround will be greyed out changes html box to PAST
+  //$().removeClass("present").addClass("past");
   // }
+
+
+
+
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
