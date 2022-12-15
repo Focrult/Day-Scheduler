@@ -21,6 +21,9 @@ The usage for this project, is to enable any user to add important events, for a
 
 # Screeshots + Link
 Link to deployed application: 
+![work1](https://user-images.githubusercontent.com/114898970/207802331-872314d8-3792-4895-b5ef-d25178af8025.png)
+![work2](https://user-images.githubusercontent.com/114898970/207802344-97bd0f2e-418b-4109-a505-dddc8de1e1b1.png)
+![work3](https://user-images.githubusercontent.com/114898970/207802345-e81c21a6-8e1e-443e-a34b-1b9d703ce172.png)
 
 
 # Credits
