@@ -8,32 +8,42 @@ $('#currentDay').text(timeRN)
 
 
 
-// $(savebtn).on("click", function (event) { //target save button click listener
-  
-// }
-// //   ) //event listener
-
-// $(".timeRN").each(function () { //go through each row
-//   var rowTime = $(this).attr("id")
-//   if(rowTime > timeRN){ //remove any previous classes, then add new class
-//     $(this).removeClass("present") //comments say use class past, present and future
-//     $(this).removeClass("part")
-//     $(this).addClass("future")
-//   }
-//   if(rowTime === timeRN){//remove any previous classes, then add new class
-//     $(this).removeClass("past")
-//     $(this).removeClass("future")
-//     $(this).addClass("present")
-//   }
-//   else{//remove any previous classes, then add new class
-//     $(this).removeClass("futre")
-//     $(this).removeClass("present")
-//     $(this).addClass("past")
-//   }
+// $(savebtn).on("click", function (event) { 
+// //   //target save button click listener
   
 // })
+  //event listener
+
+//get hour of the day contain in a functioN???
+
+function Time() {
+const hour = timeRN.hour();
+console.log(hour)
+//try to parse int - converting the string to a number and compare to hour
 
 
+
+
+$(".time-block").each(function () { //go through each row with loop!
+  var rowTime = parseInt($(this).attr("id")) //applies to all rows target the ID
+  if(rowTime > timeRN){ //remove any previous classes, then add new class
+    $(this).removeClass("present") //comments say use class past, present and future
+    $(this).removeClass("part")
+    $(this).addClass("future")
+  }
+  if(rowTime === timeRN){//remove any previous classes, then add new class
+    $(this).removeClass("past")
+    $(this).removeClass("future")
+    $(this).addClass("present")
+  }
+  else{//remove any previous classes, then add new class
+    $(this).removeClass("futre")
+    $(this).removeClass("present")
+    $(this).addClass("past")
+  }
+})
+
+}
 // //target the whole document to store in local storage?
 // $(docuement).ready(function () {
 // if(localStorage.getItem)
